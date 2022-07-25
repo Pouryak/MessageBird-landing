@@ -1,0 +1,7 @@
+node_modules
+dist
+.parcel-cache
+.DS_Store
+css/style.comp.css
+css/style.prefix.css
+css/style.concat.css

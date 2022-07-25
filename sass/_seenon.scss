@@ -1,0 +1,17 @@
+.seenon {
+  background-color: $color-background;
+  grid-column: full-start/full-end;
+
+  padding: 5rem 15rem;
+  display: grid;
+  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  align-items: center;
+
+  &__logo {
+    width: 100%;
+    padding: 0 5rem;
+  }
+}

@@ -1,0 +1,57 @@
+$color-primary: #2596be;
+$color-primary-second: #24a2cf;
+$color-secondary: #a8d8e8;
+$color-background: #f7fafe;
+$color-white: #fefeff;
+
+$color-dark-1: #273b58;
+$color-dark-2: #858586;
+
+$color-light-1: #f7fafe;
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+}
+
+body {
+  font-family: $font-primary;
+  background-color: $color-white;
+  color: $color-dark-1;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 80vh repeat(7, min-content);
+  grid-template-columns:
+    [full-start] 1fr [center-start] repeat(
+      8,
+      [col-start] minmax(min-content, 14rem) [col-end]
+    )
+    [center-end] 1fr [full-end];
+}
+
+li,
+a {
+  text-decoration: none;
+  color: $color-dark-1;
+}
+
+.logo {
+  font-size: 2rem;
+  color: $color-primary;
+  font-weight: 600;
+}

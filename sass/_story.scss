@@ -1,0 +1,22 @@
+.story {
+  grid-column: center-start/center-end;
+
+  display: flex;
+  flex-direction: column;
+  margin: 12rem 20rem;
+  text-align: center;
+
+  &__text {
+    font-size: 2.4rem;
+    line-height: 1.4;
+    color: $color-dark-1;
+    font-weight: 600;
+    margin-bottom: 1.8rem;
+  }
+
+  &__logotext {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $color-dark-2;
+  }
+}
