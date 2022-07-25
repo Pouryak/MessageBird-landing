@@ -1,4 +1,37 @@
 .footer {
-  background-color: $color-dark-2;
   grid-column: center-start/center-end;
+  text-align: center;
+  margin: 10rem 0;
+
+  &__nav {
+    list-style: none;
+    margin-bottom: 1.5rem;
+  }
+
+  &__links {
+    display: inline-block;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    & a {
+      color: $color-dark-2;
+    }
+
+    & a:hover {
+      color: $color-primary;
+    }
+  }
+
+  .copyright {
+    font-size: 1.2rem;
+    color: $color-dark-2;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+
+  &__lang {
+    color: $color-dark-2;
+    font-size: 1.2rem;
+  }
 }
