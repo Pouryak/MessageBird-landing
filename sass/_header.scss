@@ -1,9 +1,52 @@
 .header {
   background-color: $color-background;
   grid-column: full-start / full-end;
+  text-align: center;
 
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-columns: repeat(6, 1fr);
-  align-items: center;
+  &__img {
+    margin-bottom: -0.5rem;
+  }
+
+  &__heading-1 {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+  &__heading-2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $color-dark-2;
+  }
+
+  &__cta-box {
+    margin: 2rem 0;
+  }
+
+  &__cta {
+    width: 35rem;
+    height: 4rem;
+    padding: 1rem 2rem;
+    border-radius: 4px 0 0 4px;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1px 10px -5px rgba(0, 0, 0, 0.25);
+
+    &::placeholder {
+      font-family: $font-primary;
+      color: $color-dark-2;
+    }
+    &:focus {
+      border: 1px solid $color-primary;
+    }
+  }
+  &__cta--button {
+    height: 4rem;
+    color: #fff;
+    background-color: $color-primary;
+    border: none;
+    padding: 1rem 2rem;
+    margin-left: -0.5rem;
+    box-shadow: 1px 0 10px -2px rgba(0, 0, 0, 0.25);
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+  }
 }
