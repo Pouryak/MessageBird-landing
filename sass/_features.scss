@@ -7,6 +7,11 @@
   grid-gap: 4rem;
   align-items: start;
 
+  @media only screen and (max-width: 1600px) {
+    grid-gap: 2rem;
+    grid-row-gap: 4rem;
+  }
+
   &__heading {
     text-align: center;
     grid-column: center-start/center-end;
